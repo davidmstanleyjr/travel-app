@@ -21,6 +21,7 @@ const App = () => {
 	const [childClicked, setChildClicked] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 
+	// This asks the user for permission to use their geolocation through the built in browser geolocation api. This happens at the start when the user first navigates to the page.
 	useEffect(() => {
 		navigator.geolocation.getCurrentPosition(
 			({ coords: { latitude, longitude } }) => {
@@ -28,7 +29,7 @@ const App = () => {
 			}
 		);
 	}, []);
-
+	// This function takes in the places data from travelAdvisorApi.
 	useEffect(() => {
 		const filtered = places.filter((place) => Number(place.rating) > rating);
 
