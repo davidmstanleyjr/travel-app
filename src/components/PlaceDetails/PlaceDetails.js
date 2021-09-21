@@ -36,6 +36,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
 				<Typography gutterBottom variant="h5">
 					{place.name}
 				</Typography>
+				{/* Review data */}
 				<Box display="flex" justifyContent="space-between" my={2}>
 					<Rating name="read-only" value={Number(place.rating)} readOnly />
 					<Typography component="legend">
@@ -43,17 +44,20 @@ const PlaceDetails = ({ place, selected, refProp }) => {
 					</Typography>
 				</Box>
 				<Box display="flex" justifyContent="space-between">
+					{/* Price data */}
 					<Typography component="legend">Price</Typography>
 					<Typography gutterBottom variant="subtitle1">
 						{place.price_level}
 					</Typography>
 				</Box>
 				<Box display="flex" justifyContent="space-between">
+					{/* Ranking data */}
 					<Typography component="legend">Ranking</Typography>
 					<Typography gutterBottom variant="subtitle1">
 						{place.ranking}
 					</Typography>
 				</Box>
+				{/* If the place has won awards, display them */}
 				{place?.awards?.map((award) => (
 					<Box
 						display="flex"
@@ -67,9 +71,11 @@ const PlaceDetails = ({ place, selected, refProp }) => {
 						</Typography>
 					</Box>
 				))}
+				{/* Displays the cuisine type */}
 				{place?.cuisine?.map(({ name }) => (
 					<Chip key={name} size="small" label={name} className={classes.chip} />
 				))}
+				{/* Address logic */}
 				{place.address && (
 					<Typography
 						gutterBottom
@@ -81,6 +87,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
 						{place.address}
 					</Typography>
 				)}
+				{/* Phone number logic */}
 				{place.phone && (
 					<Typography
 						variant="body2"
@@ -95,6 +102,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
 				<Button
 					size="small"
 					color="primary"
+					// Takes you to the restaurants trip advisor page
 					onClick={() => window.open(place.web_url, "_blank")}
 				>
 					Trip Advisor
@@ -102,6 +110,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
 				<Button
 					size="small"
 					color="primary"
+					// This takes you to the restaurants actual website
 					onClick={() => window.open(place.website, "_blank")}
 				>
 					Website

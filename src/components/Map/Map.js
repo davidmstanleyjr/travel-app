@@ -40,6 +40,7 @@ const Map = ({
 				{places.length &&
 					places.map((place, i) => (
 						<div
+							// places can't be displayed without the latitude and longitude logic
 							className={classes.markerContainer}
 							lat={Number(place.latitude)}
 							lng={Number(place.longitude)}

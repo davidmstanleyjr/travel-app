@@ -24,7 +24,7 @@ const List = ({
 }) => {
 	const [elRefs, setElRefs] = useState([]);
 	const classes = useStyles();
-
+	// This allows the user to scroll through the info relating to each place on the map
 	useEffect(() => {
 		setElRefs((refs) =>
 			Array(places.length)
