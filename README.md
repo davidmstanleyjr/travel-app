@@ -37,4 +37,4 @@ Map styles js comes from a website that allows you to beautify your maps. It's p
 ## Screenshots
 
 ![Screenshot 1](images/snip1.PNG)
-![Screenshot 2](images/snip2.PNG)![Screenshot 3](images/snip3.PNG)![Screenshot 4](images/snip4.PNG)!
+![Screenshot 2](images/snip2.PNG)![Screenshot 3](images/snip3.PNG)![Screenshot 4](images/snip4.PNG)
