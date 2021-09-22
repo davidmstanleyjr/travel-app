@@ -1,6 +1,6 @@
 # travel-app
 
-I made this because I wanted more experience with the Google maps api. I wouldn't have been able to do this without the experience I gained the first time I worked with the Google maps api. This projects wasn't terribly difficult.
+I made this because I wanted more experience with the Google maps api. I wouldn't have been able to do this without the experience I gained the first time I worked with the Google maps api. This project wasn't terribly difficult.
 
 ## Environment Setup
 
@@ -32,7 +32,7 @@ The travelAdvisorAPI was tricky because i've never used it. I had to query it in
 
 The search logic wasn't difficult. I used an onload event and autocomplete and everything just fell into place. Google makes it easy to implement that logic.
 
-Map styles js comes from a website that allows you to beautify your maps. It's pretty cool. It's called Snazzy maps.
+Map styles.js comes from a website that allows you to beautify your maps. It's pretty cool. It's called Snazzy maps.
 
 ## Screenshots
 
